@@ -1,0 +1,22 @@
+{
+	"name": "DS_SINK_BLOB_CICD",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_BLOB_CICD",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "output-container"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

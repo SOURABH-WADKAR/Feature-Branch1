@@ -1,0 +1,64 @@
+{
+	"name": "DS_SOURCE_BLOB_CICD",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_BLOB_CICD",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "2023-10-22.csv",
+				"container": "input-container"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Education",
+				"type": "String"
+			},
+			{
+				"name": "JoiningYear",
+				"type": "String"
+			},
+			{
+				"name": "City",
+				"type": "String"
+			},
+			{
+				"name": "PaymentTier",
+				"type": "String"
+			},
+			{
+				"name": "Age",
+				"type": "String"
+			},
+			{
+				"name": "Gender",
+				"type": "String"
+			},
+			{
+				"name": "EverBenched",
+				"type": "String"
+			},
+			{
+				"name": "ExperienceInCurrentDomain",
+				"type": "String"
+			},
+			{
+				"name": "LeaveOrNot",
+				"type": "String"
+			},
+			{
+				"name": "Salary",
+				"type": "String"
+			}
+		]
+	}
+}
