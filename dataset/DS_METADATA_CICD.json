@@ -1,24 +1,15 @@
 {
-	"name": "DS_SOURCE_BLOB_CICD",
+	"name": "DS_METADATA_CICD",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_BLOB_CICD",
 			"type": "LinkedServiceReference"
-		},
-		"parameters": {
-			"FileName": {
-				"type": "string"
-			}
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": {
-					"value": "@dataset().FileName",
-					"type": "Expression"
-				},
 				"container": "input-container"
 			},
 			"columnDelimiter": ",",
