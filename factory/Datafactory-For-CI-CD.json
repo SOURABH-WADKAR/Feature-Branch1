@@ -1,0 +1,9 @@
+{
+	"name": "Datafactory-For-CI-CD",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "836cbd7e-2dcd-4044-8401-1a1cae06ea3b",
+		"tenantId": "71335b7e-6fef-42ac-80af-30475a0cd09c"
+	}
+}
